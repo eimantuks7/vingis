@@ -1,7 +1,7 @@
 ﻿(function () {
 
   // Change this to your GitHub username so you don't have to modify so many things.
-  var fork = "linux35";
+  var fork = "likux35";
 
   // Define our function responsible for extending the bot.
   function extend() {
