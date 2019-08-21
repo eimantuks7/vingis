@@ -1,12 +1,9 @@
 /**
 
- Copyright © 2014-2019 basicBot
+ Copyright © 2014-2018 basicBot
 
- BasicBot v2
-
- Lukasenka edition
- 
- Original Source : https://github.com/basicBot/source
+ Modifications (including forks) of the code to fit personal needs are allowed only for personal use and should refer back to the original source.
+ This software is not for profit, any extension, or unauthorised person providing this software is not authorised to be in a position of any monetary gain from this use of this software. Any and all money gained under the use of the software (which includes donations) must be passed on to the original author.
 
  */
 
@@ -392,16 +389,15 @@
                     var ind = Math.floor(Math.random() * basicBot.room.roulette.participants.length);
                     var winner = basicBot.room.roulette.participants[ind];
                     basicBot.room.roulette.participants = [];
-                    var pos = Math.floor((Math.random() * API.getWaitList().length) + 1);
                     var user = basicBot.userUtilities.lookupUser(winner);
                     var name = user.username;
                     API.sendChat(subChat(basicBot.chat.winnerpicked, {
                         name: name,
-                        position: pos
+                        position: 1
                     }));
-                    setTimeout(function(winner, pos) {
-                        basicBot.userUtilities.moveUser(winner, pos, false);
-                    }, 1 * 1000, winner, pos);
+                    setTimeout(function(winner, 1) {
+                        basicBot.userUtilities.moveUser(winner, 1, false);
+                    }, 1 * 1000, winner, 1);
                 }
             },
             usersUsedThor: []
