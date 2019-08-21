@@ -2,6 +2,7 @@
 
   // Change this to your GitHub username so you don't have to modify so many things.
   var fork = "likux35";
+  this.resp = this.https.get(this.apiURL ); //try this
 
   // Define our function responsible for extending the bot.
   function extend() {
