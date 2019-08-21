@@ -389,16 +389,15 @@
                     var ind = Math.floor(Math.random() * basicBot.room.roulette.participants.length);
                     var winner = basicBot.room.roulette.participants[ind];
                     basicBot.room.roulette.participants = [];
-                    var pos = Math.floor((Math.random() * API.getWaitList().length) + 1);
                     var user = basicBot.userUtilities.lookupUser(winner);
                     var name = user.username;
                     API.sendChat(subChat(basicBot.chat.winnerpicked, {
                         name: name,
-                        position: pos
+                        position: 1
                     }));
-                    setTimeout(function(winner, pos) {
-                        basicBot.userUtilities.moveUser(winner, pos, false);
-                    }, 1 * 1000, winner, pos);
+                    setTimeout(function(winner, 1) {
+                        basicBot.userUtilities.moveUser(winner, 1, false);
+                    }, 1 * 1000, winner, 1);
                 }
             },
             usersUsedThor: []
@@ -2612,7 +2611,7 @@
             },
 
             joinCommand: {
-                command: 'join',
+                command: 'play',
                 rank: 'user',
                 type: 'exact',
                 functionality: function(chat, cmd) {
