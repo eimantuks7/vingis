@@ -45,8 +45,8 @@
   localStorage.setItem("basicBotsettings", JSON.stringify({
       botName: 'BasicBot v2',
       language: 'lithuanian',
-      chatLink: 'https://raw.githack.com/likux35/lietuvos-bendruomene-basicbot/master/lang/lt.json',
-      scriptLink: 'https://raw.githack.com/likux35/lietuvos-bendruomene-basicbot/master/run/botv2.js',
+      chatLink: 'https://raw.githack.com/likux35/lietuvos-bendruomene-basicbot/master/lang/lt-LT.json',
+      scriptLink: 'https://raw.githack.com/likux35/lietuvos-bendruomene-basicbot/master/run/bot-source.js',
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 1, // 1-200
       startupVolume: 15, // 0-100
@@ -112,6 +112,6 @@
   }));
 
   // Start the bot and extend it when it has loaded.
-  $.getScript("https://raw.githack.com/likux35/lietuvos-bendruomene-basicbot/master/run/botv2.js", extend);
+  $.getScript("https://raw.githack.com/likux35/lietuvos-bendruomene-basicbot/master/run/bot-source.js", extend);
 
 }).call(this);
