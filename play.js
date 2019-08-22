@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
 
   // Define our function responsible for extending the bot.
   function extend() {
