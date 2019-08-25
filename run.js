@@ -100,7 +100,7 @@
       fbLink: null,
       youtubeLink: 'https://www.youtube.com/channel/UC3m7yzO8lUGByYFt2HOBOQw?view_as=subscriber',
       website: null,
-      intervalMessages: [`[EVENT] Primename, kad Penktadienį (23/08/2019) nuo 20:00 iki 23:00 Lietuvos laiku gros tik Lietuviška muzika. Ne Lietuviška muzika - SKIP. Nepatingėk ir prisijunk prie mūsų!`],
+      intervalMessages: [],
       messageInterval: 10,
       songstats: false,
       commandLiteral: '!',
