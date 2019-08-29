@@ -43,14 +43,14 @@
   //Change the bots default settings and make sure they are loaded on launch
 
   localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: 'BasicBot v2',
+      botName: 'BasicBot v3.3.1',
       language: 'lithuanian',
       chatLink: 'https://raw.githack.com/likux35/lietuvos-bendruomene-basicbot/master/lang/lt-LT.json',
       scriptLink: 'https://raw.githack.com/likux35/lietuvos-bendruomene-basicbot/master/run/bot-source.js',
       roomLock: false, // Requires an extension to re-load the script
-      startupCap: 1, // 1-200
+      startupCap: 200, // 1-200
       startupVolume: 15, // 0-100
-      startupEmoji: false, // true or false
+      startupEmoji: true, // true or false
       autowoot: true,
       autoskip: true,
       smartSkip: true,
