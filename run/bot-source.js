@@ -4,7 +4,7 @@ Version : 3.4
 Author (editor) : Lukasenka
 Edited code obfuscated due security reasons
 
-Original Source : https://github.com/basicBot/v3
+Original Source : https://github.com/basicBot/source
 
 -----------------------------------------------
 CHANGE LOG
