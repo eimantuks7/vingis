@@ -43,7 +43,7 @@
   //Change the bots default settings and make sure they are loaded on launch
 
   localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: 'BasicBot',
+      botName: 'Alexa',
       language: 'lithuanian',
       chatLink: 'https://raw.githack.com/eimantuks7/vingis/master/lang/lt-LT.json',
       scriptLink: 'https://raw.githack.com/likux35/lietuvos-bendruomene-basicbot/master/run/bot-source.js',
